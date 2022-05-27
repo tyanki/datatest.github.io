@@ -1,0 +1,45 @@
+
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DATA TEST</title>
+    <link rel="stylesheet" href="sign in.css">
+    <link rel="stylesheet" media="screen and (max-width= 1200px)" href="mini.css"/>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="data.mp4" type="video/mp4">
+      </video>
+    <div class="form">
+      <h3 class="titro">DATA TEST Inscription</h3>
+     <form id="data" action="login.php" method="post">
+        <p><b>Nom: </b></p>
+        <input type="text" name="nom" id="nom" placeholder="ex: Mouko" required="">
+        <p><br><b>Prénom(s):</b><br></p>
+        <input type="text" name="prenom" id="prenom" placeholder="ex: Adan Wealth" required="">
+        <p><br><b>Classe:</b><br></p>
+        <select name="Classe" id="Classe">
+          <option value="MPSIA">MPSIA</option>
+          <option value="MPSIB">MPSIB</option>
+          <option value="MPSIC">MPSIC</option>
+        </select>
+        <p><br><b>Section désirée:</b><br></p>
+        <select name="Section" id="section">
+          <option value="Programmation">Programmation</option>
+          <option value="MPSIB">Web-Master</option>
+          <option value="MPSIC">Design</option>
+        </select>
+        <p><br><b>Téléphone :</b><br></p>
+        <input type="number" name="phone" id="phone" placeholder="+225XXXXXXXX" required="">
+        <p><br><b>Courriel</b><br></p>
+        <input type="email" name="mail" id="email" placeholder="datacorp@gmail.com">
+        <p><br><br><input type="submit" value="Envoyer" ></p>
+      <div id="status"></div>
+     </form>
+ </div>
+<script scr="main.js"></script>
+
+</body></html>
